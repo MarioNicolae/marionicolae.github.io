@@ -958,3 +958,218 @@ section {
         text-align: center;
     }
 }
+
+/* Volunteering Section */
+.volunteering {
+    background: var(--white);
+}
+
+.volunteering-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.volunteer-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-medium);
+    border: 2px solid transparent;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-blue);
+}
+
+.volunteer-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.volunteer-card h3 {
+    font-size: 1.3rem;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+}
+
+.volunteer-org {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.volunteer-date {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.volunteer-description {
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+/* Exchange Programs */
+.exchange-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.exchange-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-medium);
+}
+
+.exchange-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.exchange-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.exchange-flag {
+    font-size: 3rem;
+}
+
+.exchange-badge {
+    padding: 8px 16px;
+    background: var(--gradient-light);
+    color: var(--white);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.exchange-card h3 {
+    font-size: 1.4rem;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+}
+
+.exchange-location {
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.exchange-date {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.exchange-description {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.exchange-achievements {
+    background: var(--gray-50);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.exchange-achievements p {
+    color: var(--gray-700);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.exchange-achievements p:last-child {
+    margin-bottom: 0;
+}
+
+/* Publications Section */
+.publications {
+    background: var(--gray-50);
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.publication-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-medium);
+    text-align: center;
+}
+
+.publication-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.publication-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.publication-card h3 {
+    font-size: 1.3rem;
+    color: var(--gray-900);
+    margin-bottom: 15px;
+}
+
+.publication-journal {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.publication-date {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.publication-link {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--gradient-main);
+    color: var(--white);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all var(--transition-medium);
+}
+
+.publication-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .volunteering-grid,
+    .exchange-grid,
+    .publications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .exchange-card {
+        padding: 25px;
+    }
+}
